@@ -48,7 +48,7 @@
 
 (format t "~%")
 
-(format t "C program, func, -O2 -ldl:~%~A"
+(format t "C program, func, -O2:~%~A"
         (with-output-to-string (s)
           (sb-ext:run-program "./cfn" nil :output s)))
 
